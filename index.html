@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人生ゲーム お金管理アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <h1>人生ゲーム お金管理アプリ</h1>
+        
+        <div class="player-section">
+            <h2>プレイヤー管理</h2>
+            <div class="player-controls">
+                <input type="text" id="playerName" placeholder="プレイヤー名を入力">
+                <button onclick="addPlayer()">追加</button>
+            </div>
+            <div class="players-list" id="playersList"></div>
+        </div>
+
+        <div class="money-section">
+            <h2>お金の管理</h2>
+            <div class="money-controls">
+                <select id="playerSelect">
+                    <option value="">プレイヤーを選択</option>
+                </select>
+                <input type="number" id="amount" placeholder="金額を入力">
+                <div class="money-buttons">
+                    <button onclick="addMoney()">追加</button>
+                    <button onclick="subtractMoney()">引去り</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
